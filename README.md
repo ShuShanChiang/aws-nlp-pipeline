@@ -57,16 +57,24 @@ This project showcases a scalable, event-driven NLP pipeline on AWS for processi
 
 ---
 
-## 📁 Repository Structure (example)
+## Repository Structure
 
 ```plaintext
 aws-nlp-pipeline/
-├── lambda/
-│   └── handler.py
-├── ec2_worker/
-│   └── wordfreq_processor.py
-├── cloudformation/
-│   └── autoscaling_template.yaml
-├── README.md
-└── architecture_diagram.png
+├── cmd/                            # Entry points for running different services
+│   ├── main.go                     # Starts the full pipeline
+│   ├── main_Upload.go             # Handles file uploads
+│   └── main_createTable.go        # Initializes DynamoDB tables
+├── pkg/
+│   ├── worker/                    # Message parsing and queueing logic
+│   │   ├── config.go
+│   │   ├── job_message_parse.go
+│   │   ├── job_message_queue.go
+│   │   └── worker.go
+│   └── result/                    # Result processing and notification
+│       ├── result_recorder.go
+│       ├── result_collector.go
+│       └── result_notifier.go
+└── README.md
+
 
