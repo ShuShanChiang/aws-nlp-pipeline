@@ -12,6 +12,7 @@ This project showcases a scalable, event-driven NLP pipeline on AWS for processi
 - **Result Storage**: Output is stored in DynamoDB and sent to a second SQS queue.
 - **Monitoring**: CloudWatch tracks queue depth and triggers Auto Scaling adjustments.
 - **Backup & Resilience**: AWS Backup, S3 Glacier, and Multi-AZ configurations ensure durability.
+![image](https://github.com/user-attachments/assets/5c75cda5-0d6d-46b3-bcb9-617a7721bbb4)
 
 ---
 
