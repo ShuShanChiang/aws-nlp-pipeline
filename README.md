@@ -18,13 +18,26 @@ This project showcases a scalable, event-driven NLP pipeline on AWS for processi
 
 ## Technologies Used
 
-- **Amazon S3** – File storage and versioning  
-- **Amazon SQS** – Decoupled messaging for task queues  
-- **Amazon EC2** – Compute for processing jobs  
-- **Auto Scaling Group** – Elastic scaling based on queue depth  
+- **Amazon S3** – File storage and versioning
+  ![image](https://github.com/user-attachments/assets/b7735fc9-8e0d-45fe-8b2c-ef4d3921866e)
+  
+- **Amazon SQS** – Decoupled messaging for task queues
+  ![image](https://github.com/user-attachments/assets/2eb2b481-8693-43da-ab63-4a90a9d0b313)
+  ![image](https://github.com/user-attachments/assets/8e0493e3-1de6-427d-b028-320a49d2917e)
+
+- **Amazon EC2** – Compute for processing jobs
+  ![image](https://github.com/user-attachments/assets/c689972e-5700-4f04-b925-2c721950c281)
+  ![image](https://github.com/user-attachments/assets/09bf0ab5-0162-4150-9e41-517ba2f9cb10)
+
+- **Auto Scaling Group** – Elastic scaling based on queue depth
+  ![image](https://github.com/user-attachments/assets/6ce70be9-d1f3-43e0-8662-a33566e2e325)
+  ![image](https://github.com/user-attachments/assets/0b81c639-4780-470e-8b23-544c0b37f42f)
+
 - **Amazon CloudWatch** – Metrics, alarms, and logging  
 - **AWS Lambda** – Backend automation and notification  
-- **Amazon DynamoDB** – Fast NoSQL storage for job results  
+- **Amazon DynamoDB** – Fast NoSQL storage for job results(store the output of top 10 most common words)
+  ![image](https://github.com/user-attachments/assets/34e71532-6fea-4b08-ac3f-232e3e493fde)
+  
 - **AWS Backup / Glacier** – Long-term backup and disaster recovery  
 - **Amazon Route 53 / CloudFront / IAM** – Website delivery, security, and access control  
 
